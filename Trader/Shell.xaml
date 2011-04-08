@@ -1,0 +1,25 @@
+﻿<Window x:Class="Trader.Shell"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:cal="http://www.codeplex.com/CompositeWPF"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:inf="clr-namespace:Trader.Infrastructure;assembly=Trader.Infrastructure"
+    Title="Trader" Height="350" Width="500">
+
+    <DockPanel LastChildFill="True">
+        <ItemsControl Name="MainMenuRegion" cal:RegionManager.RegionName="{x:Static inf:RegionNames.MainMenuRegion}" 
+                      DockPanel.Dock="Top" Focusable="False" />
+        <ItemsControl Name="ServerSelectorRegion" cal:RegionManager.RegionName="{x:Static inf:RegionNames.ServerSelectorRegion}"
+                      DockPanel.Dock="Top" Focusable="False" />
+        <ItemsControl Name="ModuleSelectorRegion" cal:RegionManager.RegionName="{x:Static inf:RegionNames.ModuleSelectorRegion}" 
+                      DockPanel.Dock="Top" Focusable="False"/>
+        <ItemsControl Name="StatusRegion" cal:RegionManager.RegionName="{x:Static inf:RegionNames.StatusRegion}" 
+                      DockPanel.Dock="Bottom" Focusable="False" />
+        <ItemsControl Name="MainRegion" cal:RegionManager.RegionName="{x:Static inf:RegionNames.MainRegion}" Focusable="False">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <DockPanel/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+        </ItemsControl>
+    </DockPanel>
+</Window>
