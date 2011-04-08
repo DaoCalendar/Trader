@@ -39,12 +39,14 @@ namespace Trader
 
         protected override void ConfigureModuleCatalog()
         {
-            base.ConfigureModuleCatalog(); 
-            
-            //ModuleCatalog moduleCatalog = (ModuleCatalog)this.ModuleCatalog;
-            //moduleCatalog.AddModule(typeof(GreenblattModule.GreenblattModule));
-
+            base.ConfigureModuleCatalog();
         }
- 
+
+        protected override void ConfigureContainer()
+        {
+            base.ConfigureContainer();
+            Container.RegisterInstance<ILoggerFacade>(logger);
+        }
+
     }
 }
