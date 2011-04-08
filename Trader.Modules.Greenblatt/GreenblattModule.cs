@@ -2,13 +2,13 @@
 using Microsoft.Practices.Prism.Regions;
 using Trader.Infrastructure;
  
-namespace GreenblattModule
+namespace Trader.Modules.Greenblatt
 {
-    public class GreenblattModule : IModule
+    public class Greenblatt : IModule
     {
         private readonly IRegionManager regionManager;
 
-        public GreenblattModule(IRegionManager regionManager)
+        public Greenblatt(IRegionManager regionManager)
         {
             this.regionManager = regionManager;
         }

@@ -110,9 +110,9 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GreenblattModule\GreenblattModule.csproj">
+    <ProjectReference Include="..\Trader.Modules.Greenblatt\Trader.Modules.Greenblatt.csproj">
       <Project>{A602A158-0127-46B2-940D-9A6D8A29DFA0}</Project>
-      <Name>GreenblattModule</Name>
+      <Name>Trader.Modules.Greenblatt</Name>
     </ProjectReference>
     <ProjectReference Include="..\Trader.Infrastructure\Trader.Infrastructure.csproj">
       <Project>{38364E46-7F77-485F-9BF5-E108C3B00508}</Project>

@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositeApplicationLibrary
 		CompositeApplicationLibrary\Microsoft.Practices.Unity.dll = CompositeApplicationLibrary\Microsoft.Practices.Unity.dll
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenblattModule", "GreenblattModule\GreenblattModule.csproj", "{A602A158-0127-46B2-940D-9A6D8A29DFA0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trader.Modules.Greenblatt", "Trader.Modules.Greenblatt\Trader.Modules.Greenblatt.csproj", "{A602A158-0127-46B2-940D-9A6D8A29DFA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -12,7 +12,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GreenblattModule.Views
+namespace Trader.Modules.Greenblatt.Views
 {
     /// <summary>
     /// Interaction logic for GreenblattView.xaml

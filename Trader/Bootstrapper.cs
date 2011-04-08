@@ -32,12 +32,17 @@ namespace Trader
             App.Current.MainWindow.Show();
         }
 
+        protected override IModuleCatalog CreateModuleCatalog()
+        {
+            return new ConfigurationModuleCatalog();
+        } 
+
         protected override void ConfigureModuleCatalog()
         {
             base.ConfigureModuleCatalog(); 
             
-            ModuleCatalog moduleCatalog = (ModuleCatalog)this.ModuleCatalog;
-            moduleCatalog.AddModule(typeof(GreenblattModule.GreenblattModule));
+            //ModuleCatalog moduleCatalog = (ModuleCatalog)this.ModuleCatalog;
+            //moduleCatalog.AddModule(typeof(GreenblattModule.GreenblattModule));
 
         }
  
