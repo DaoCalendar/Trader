@@ -11,5 +11,6 @@
     </UserControl.DataContext>
     <Grid>
         <TextBlock Text="{Binding Text}" Foreground="Green" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Calibri" FontSize="24" FontWeight="Bold"></TextBlock>
+        <Button Content="Go!" Command="{Binding Path=GoCommand}" Height="23" HorizontalAlignment="Left" Margin="113,171,0,0" Name="button1" VerticalAlignment="Top" Width="75" />
     </Grid>
 </UserControl>

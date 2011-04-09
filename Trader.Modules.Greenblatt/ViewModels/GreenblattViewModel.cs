@@ -5,6 +5,8 @@ using System.Text;
 using System.Windows.Media;
 using Microsoft.Practices.Prism.ViewModel;
 using Trader.Modules.Greenblatt.Models;
+using Microsoft.Practices.Prism.Commands;
+using System.Windows.Input;
 
 namespace Trader.Modules.Greenblatt.ViewModels
 {
@@ -15,14 +17,27 @@ namespace Trader.Modules.Greenblatt.ViewModels
         public GreenblattViewModel()
         {
             model = new GreenblattModel();
+            Text = model.ImportantData;
+            this.goCommand = new DelegateCommand(this.MyCommand);
         }
 
         public string Text
         {
-            get
-            {
-                return this.model.ImportantData;
-            }
+            get;
+            set;
+        }
+
+        private ICommand goCommand;
+        public ICommand GoCommand
+        {
+            get { return this.goCommand; }
+            set { goCommand = value; }
+        }
+
+        private void MyCommand()
+        {
+            Text = "BLAH!";
+            this.RaisePropertyChanged(() => this.Text);
         }
     }
 }
