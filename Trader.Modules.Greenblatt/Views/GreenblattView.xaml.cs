@@ -11,6 +11,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Trader.Modules.Greenblatt.ViewModels;
+using Microsoft.Practices.Prism.Logging;
 
 namespace Trader.Modules.Greenblatt.Views
 {
@@ -19,9 +21,10 @@ namespace Trader.Modules.Greenblatt.Views
     /// </summary>
     public partial class GreenblattView : UserControl
     {
-        public GreenblattView()
+        public GreenblattView(ILoggerFacade logger)
         {
             InitializeComponent();
+            DataContext = new GreenblattViewModel(logger);
         }
     }
 }
