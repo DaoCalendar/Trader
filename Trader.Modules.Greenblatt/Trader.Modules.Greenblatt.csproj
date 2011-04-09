@@ -8,7 +8,7 @@
     <ProjectGuid>{A602A158-0127-46B2-940D-9A6D8A29DFA0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Greenblatt</RootNamespace>
+    <RootNamespace>Trader.Modules.Greenblatt</RootNamespace>
     <AssemblyName>Trader.Modules.Greenblatt</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -50,7 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GreenblattModule.cs" />
+    <Compile Include="Models\GreenblattModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\GreenblattViewModel.cs" />
     <Compile Include="Views\GreenblattView.xaml.cs">
       <DependentUpon>GreenblattView.xaml</DependentUpon>
     </Compile>
@@ -67,6 +69,7 @@
       <Name>Trader.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy "$(TargetDir)*.*" "$(SolutionDir)Trader\bin\$(ConfigurationName)\Modules\" /Y</PostBuildEvent>
