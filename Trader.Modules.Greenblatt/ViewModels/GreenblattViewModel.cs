@@ -13,7 +13,7 @@ namespace Trader.Modules.Greenblatt.ViewModels
 {
     public class GreenblattViewModel : NotificationObject, IGreenblattViewModel
     {
-        GreenblattModel model;
+        IGreenblattModel model;
 
         public ILoggerFacade Logger
         {
@@ -21,9 +21,9 @@ namespace Trader.Modules.Greenblatt.ViewModels
             set;
         }
         
-        public GreenblattViewModel(ILoggerFacade logger)
+        public GreenblattViewModel(IGreenblattModel model, ILoggerFacade logger)
         {
-            this.model = new GreenblattModel();
+            this.model = model;
             this.Text = model.ImportantData;
             this.goCommand = new DelegateCommand(this.MyCommand);
             this.Logger = logger;

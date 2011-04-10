@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="GreenblattModule.cs" />
     <Compile Include="Models\GreenblattModel.cs" />
+    <Compile Include="Models\IGreenblattModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\GreenblattViewModel.cs" />
     <Compile Include="ViewModels\IGreenblattViewModel.cs" />

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Trader.Modules.Greenblatt.Models
 {
-    class GreenblattModel
+    public class GreenblattModel : IGreenblattModel
     {
         string importantData;
 

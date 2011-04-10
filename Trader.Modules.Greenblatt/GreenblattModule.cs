@@ -4,6 +4,7 @@ using Trader.Infrastructure;
 using Microsoft.Practices.Prism.Logging;
 using Microsoft.Practices.Unity;
 using Trader.Modules.Greenblatt.ViewModels;
+using Trader.Modules.Greenblatt.Models;
  
 namespace Trader.Modules.Greenblatt
 {
@@ -23,7 +24,10 @@ namespace Trader.Modules.Greenblatt
         public void Initialize()
         {
             container.RegisterType<IGreenblattViewModel, GreenblattViewModel>();
+            container.RegisterType<IGreenblattModel, GreenblattModel>();
+
             regionManager.RegisterViewWithRegion(RegionNames.MainRegion, typeof(Views.GreenblattView));
+
             logger.Log("Greenblatt module initialized", Category.Info, Priority.High);
         }
      }
