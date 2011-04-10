@@ -11,17 +11,22 @@ using Microsoft.Practices.Prism.Logging;
 
 namespace Trader.Modules.Greenblatt.ViewModels
 {
-    class GreenblattViewModel : NotificationObject
+    public class GreenblattViewModel : NotificationObject
     {
         GreenblattModel model;
-        ILoggerFacade logger;
 
+        public ILoggerFacade Logger
+        {
+            get;
+            set;
+        }
+        
         public GreenblattViewModel(ILoggerFacade logger)
         {
-            model = new GreenblattModel();
-            Text = model.ImportantData;
+            this.model = new GreenblattModel();
+            this.Text = model.ImportantData;
             this.goCommand = new DelegateCommand(this.MyCommand);
-            this.logger = logger;
+            this.Logger = logger;
         }
 
         public string Text
@@ -39,7 +44,7 @@ namespace Trader.Modules.Greenblatt.ViewModels
 
         private void MyCommand()
         {
-            Text = "BLAH!";
+            Text = "Button Pressed!";
             this.RaisePropertyChanged(() => this.Text);
         }
     }

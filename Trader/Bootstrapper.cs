@@ -7,6 +7,7 @@ using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.UnityExtensions;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Prism.Logging;
+using Trader.Infrastructure;
 
 namespace Trader
 {

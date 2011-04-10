@@ -21,10 +21,10 @@ namespace Trader.Modules.Greenblatt.Views
     /// </summary>
     public partial class GreenblattView : UserControl
     {
-        public GreenblattView(ILoggerFacade logger)
+        public GreenblattView(GreenblattViewModel model)
         {
             InitializeComponent();
-            DataContext = new GreenblattViewModel(logger);
+            this.DataContext = model;
         }
     }
 }
