@@ -11,7 +11,7 @@ using Microsoft.Practices.Prism.Logging;
 
 namespace Trader.Modules.Greenblatt.ViewModels
 {
-    public class GreenblattViewModel : NotificationObject
+    public class GreenblattViewModel : NotificationObject, IGreenblattViewModel
     {
         GreenblattModel model;
 
@@ -45,6 +45,7 @@ namespace Trader.Modules.Greenblatt.ViewModels
         private void MyCommand()
         {
             Text = "Button Pressed!";
+            Logger.Log("BUTTON PRESSED, RED ALERT", Category.Warn, Priority.High);
             this.RaisePropertyChanged(() => this.Text);
         }
     }

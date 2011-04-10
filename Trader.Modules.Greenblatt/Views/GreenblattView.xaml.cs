@@ -21,7 +21,7 @@ namespace Trader.Modules.Greenblatt.Views
     /// </summary>
     public partial class GreenblattView : UserControl
     {
-        public GreenblattView(GreenblattViewModel model)
+        public GreenblattView(IGreenblattViewModel model)
         {
             InitializeComponent();
             this.DataContext = model;
