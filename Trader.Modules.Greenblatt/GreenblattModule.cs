@@ -1,10 +1,10 @@
-﻿using Microsoft.Practices.Prism.Modularity;
+﻿using Microsoft.Practices.Prism.Logging;
+using Microsoft.Practices.Prism.Modularity;
 using Microsoft.Practices.Prism.Regions;
-using Trader.Infrastructure;
-using Microsoft.Practices.Prism.Logging;
 using Microsoft.Practices.Unity;
-using Trader.Modules.Greenblatt.ViewModels;
+using Trader.Infrastructure.Names;
 using Trader.Modules.Greenblatt.Models;
+using Trader.Modules.Greenblatt.ViewModels;
  
 namespace Trader.Modules.Greenblatt
 {

@@ -58,7 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnterpriseLibraryLoggerAdapter.cs" />
+    <Compile Include="Services\LoggingService.cs" />
     <Compile Include="Names\RegionNames.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

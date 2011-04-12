@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Trader.Modules.Greenblatt.Models
+﻿namespace Trader.Modules.Greenblatt.Models
 {
     public class GreenblattModel : IGreenblattModel
     {

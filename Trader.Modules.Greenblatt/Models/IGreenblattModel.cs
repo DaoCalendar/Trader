@@ -1,5 +1,4 @@
-﻿using System;
-namespace Trader.Modules.Greenblatt.Models
+﻿namespace Trader.Modules.Greenblatt.Models
 {
     public interface IGreenblattModel
     {

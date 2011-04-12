@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Trader.Infrastructure
+﻿namespace Trader.Infrastructure.Names
 {    
     /// <summary>
     /// Class RegionNames contains region names used by Composite Application Library

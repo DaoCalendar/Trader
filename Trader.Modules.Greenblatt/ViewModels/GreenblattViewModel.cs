@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows.Media;
+﻿using System.Windows.Input;
+using Microsoft.Practices.Prism.Commands;
+using Microsoft.Practices.Prism.Logging;
 using Microsoft.Practices.Prism.ViewModel;
 using Trader.Modules.Greenblatt.Models;
-using Microsoft.Practices.Prism.Commands;
-using System.Windows.Input;
-using Microsoft.Practices.Prism.Logging;
 
 namespace Trader.Modules.Greenblatt.ViewModels
 {

@@ -1,9 +1,9 @@
-using Microsoft.Practices.Prism.Logging;
 using Microsoft.Practices.EnterpriseLibrary.Logging;
+using Microsoft.Practices.Prism.Logging;
 
-namespace Trader.Infrastructure
+namespace Trader.Infrastructure.Services
 {
-    public class EnterpriseLibraryLoggerAdapter : ILoggerFacade
+    public class LoggingService : ILoggerFacade
     {
         public void Log(string message, Category category, Priority priority)
         {
