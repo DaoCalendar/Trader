@@ -1,9 +1,14 @@
-﻿namespace Trader.Modules.Greenblatt.ViewModels
+﻿using System.Windows.Input;
+using Microsoft.Practices.Prism.Logging;
+
+namespace Trader.Modules.Greenblatt.ViewModels
 {
     public interface IGreenblattViewModel
     {
-        System.Windows.Input.ICommand GoCommand { get; set; }
-        Microsoft.Practices.Prism.Logging.ILoggerFacade Logger { get; set; }
+        // Example command to bind to
+        ICommand GoCommand { get; set; }
+
+        // Example text to bind to
         string Text { get; set; }
     }
 }

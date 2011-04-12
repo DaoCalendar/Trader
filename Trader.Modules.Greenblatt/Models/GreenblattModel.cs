@@ -2,19 +2,18 @@
 {
     public class GreenblattModel : IGreenblattModel
     {
-        string importantData;
 
+        // Set up the example data with a value
         public GreenblattModel()
         {
-            importantData = "Greenblatt";
+            this.ImportantData = "Greenblatt";
         }
 
+        // Example data
         public string ImportantData
         {
-            get
-            {
-                return this.importantData;
-            }
+            get;
+            set;
         }
 
     }
