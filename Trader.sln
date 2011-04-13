@@ -19,7 +19,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompositeApplicationLibrary
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trader.Modules.Greenblatt", "Trader.Modules.Greenblatt\Trader.Modules.Greenblatt.csproj", "{A602A158-0127-46B2-940D-9A6D8A29DFA0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{18764717-9A40-4E03-8B57-A5DFFEC872C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trader.Infrastructure.Tests", "Trader.Infrastructure.Tests\Trader.Infrastructure.Tests.csproj", "{364E8628-BDD1-45DB-B5F6-2FC50902BEA6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{B16AB377-E993-488E-85AD-005996FDED0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{9D0D46F7-B524-491A-9DD3-2C0BFFF7EDA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trader.Modules.Greenblatt.Tests", "Trader.Modules.Greenblatt.Tests\Trader.Modules.Greenblatt.Tests.csproj", "{D876B110-C97A-4447-B523-3F3F9E5CF5CD}"
+EndProject
 Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Trader.vsmdi
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -65,6 +78,26 @@ Global
 		{A602A158-0127-46B2-940D-9A6D8A29DFA0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{A602A158-0127-46B2-940D-9A6D8A29DFA0}.Release|x86.ActiveCfg = Release|Any CPU
 		{A602A158-0127-46B2-940D-9A6D8A29DFA0}.Release|x86.Build.0 = Release|Any CPU
+		{364E8628-BDD1-45DB-B5F6-2FC50902BEA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{364E8628-BDD1-45DB-B5F6-2FC50902BEA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{364E8628-BDD1-45DB-B5F6-2FC50902BEA6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{364E8628-BDD1-45DB-B5F6-2FC50902BEA6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{364E8628-BDD1-45DB-B5F6-2FC50902BEA6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{364E8628-BDD1-45DB-B5F6-2FC50902BEA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{364E8628-BDD1-45DB-B5F6-2FC50902BEA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{364E8628-BDD1-45DB-B5F6-2FC50902BEA6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{364E8628-BDD1-45DB-B5F6-2FC50902BEA6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{364E8628-BDD1-45DB-B5F6-2FC50902BEA6}.Release|x86.ActiveCfg = Release|Any CPU
+		{D876B110-C97A-4447-B523-3F3F9E5CF5CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D876B110-C97A-4447-B523-3F3F9E5CF5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D876B110-C97A-4447-B523-3F3F9E5CF5CD}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D876B110-C97A-4447-B523-3F3F9E5CF5CD}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D876B110-C97A-4447-B523-3F3F9E5CF5CD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D876B110-C97A-4447-B523-3F3F9E5CF5CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D876B110-C97A-4447-B523-3F3F9E5CF5CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D876B110-C97A-4447-B523-3F3F9E5CF5CD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D876B110-C97A-4447-B523-3F3F9E5CF5CD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D876B110-C97A-4447-B523-3F3F9E5CF5CD}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -72,5 +105,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{38364E46-7F77-485F-9BF5-E108C3B00508} = {A4BA3C0D-77A0-4EF6-A5CF-B6E271510376}
 		{A602A158-0127-46B2-940D-9A6D8A29DFA0} = {127E56D8-B8ED-4030-8789-BFE48296D5CE}
+		{B16AB377-E993-488E-85AD-005996FDED0C} = {18764717-9A40-4E03-8B57-A5DFFEC872C3}
+		{9D0D46F7-B524-491A-9DD3-2C0BFFF7EDA2} = {18764717-9A40-4E03-8B57-A5DFFEC872C3}
+		{364E8628-BDD1-45DB-B5F6-2FC50902BEA6} = {B16AB377-E993-488E-85AD-005996FDED0C}
+		{D876B110-C97A-4447-B523-3F3F9E5CF5CD} = {9D0D46F7-B524-491A-9DD3-2C0BFFF7EDA2}
 	EndGlobalSection
 EndGlobal

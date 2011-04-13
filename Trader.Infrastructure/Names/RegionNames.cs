@@ -4,13 +4,13 @@
     /// Class RegionNames contains region names used by Composite Application Library
     /// to place modules in the named regions.
     /// </summary>
-    public class RegionNames
+    public abstract class RegionNames
     {
-        public const string MainMenuRegion = "MainMenuRegion";
-        public const string ServerSelectorRegion = "ServerSelectorRegion";
-        public const string ModuleSelectorRegion = "ModuleSelectorRegion";
-        public const string StatusRegion = "StatusRegion";
-        public const string MainRegion = "MainRegion";
-        public const string ModuleRegion = "ModuleRegion";
+        public static string MainMenuRegion = "MainMenuRegion";
+        public static string ServerSelectorRegion = "ServerSelectorRegion";
+        public static string ModuleSelectorRegion = "ModuleSelectorRegion";
+        public static string StatusRegion = "StatusRegion";
+        public static string MainRegion = "MainRegion";
+        public static string ModuleRegion = "ModuleRegion";
     }
 }
